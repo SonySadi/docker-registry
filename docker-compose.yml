@@ -5,7 +5,7 @@ services:
     image: registry:2
     restart: always
     ports:
-      - "5678:5000"
+      - "127.0.0.1:5678:5000"
     environment:
       REGISTRY_STORAGE: s3
       REGISTRY_STORAGE_S3_REGION: ${REGISTRY_STORAGE_S3_REGION}
